@@ -57,11 +57,11 @@
 	2.isPrototypeOf(object)
 		object的原形链中是否含有该原形。
 		多用于判断是不是某个自定义对象的实例
-		```javascript
-		function Rectangle() {}
-		var rec = new Rectangle();
-		Rectangle.prototype.isPrototypeOf(rec); Rectangle的原形是否再rec的原型链中
-		```
+```javascript
+function Rectangle() {}
+var rec = new Rectangle();
+Rectangle.prototype.isPrototypeOf(rec); //Rectangle的原形是否再rec的原型链中
+```
 	3.propertyIsEnumerable
 		检测属性是否能被枚举出。
 ### 三、function
