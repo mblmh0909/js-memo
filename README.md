@@ -51,9 +51,6 @@
 	1.constructor
 		指向该对象的构造函数，指向其构造函数。
 		即new ??();??为构造函数名，constructor指向??本身
-	
-	2.this
-		谁调用this指向谁。function声明指向Global，对象新建指向对象本身。
 #### （二）方法
 	1.hasOwnProperty(property)
 		判断是否拥有属性。即排除原型属性
@@ -71,9 +68,12 @@
 #### （一）属性
 	1.prototype
 		默认属性constructor指向函数本身。
+	内部属性
 	2.argument
 		接收到的参数。argument.callee返回本函数。strict模式下不可用。
 		能做到函数本身不与函数名耦合，但就代码可读性来说。尽量不要这么做。
+	2.this
+		谁调用this指向谁。function声明指向Global，对象新建指向对象本身。
 #### （二）方法
 	1.call、apply、bind
 		目的是为了便于谁调用了。扩展this。
